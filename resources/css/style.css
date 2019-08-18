@@ -16,8 +16,17 @@ html {
     font-family: 'Lato', 'Arial', san-serif;
     font-size: 20px;
     font-weight: 300px;   
-    
 }
+
+.clearfix {zoom:1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /* ------------------------ */
 /* REUSABLE COMPONENT */
 /* ------------------------ */
@@ -42,6 +51,17 @@ section {
     font-size: 350%;
     color: #e67e22;
     margin-bottom: 10px;    
+}
+
+.icon-small {
+    color: #e67e22;  
+    width: 30px;
+    display: inline-block;
+    /*
+    IF WANT TO ALIGN TEXT AND ICONS
+    line-height: 120%;
+    vertical-align: middle;
+    */
 }
 /*------------HEADING--------*/
 
@@ -211,6 +231,10 @@ header {
 /* ------------------------ */
 /* MEALS */
 /* ------------------------ */
+.section-meals {
+    padding: 0;
+    
+}
 
 .meal-showcase {
     width: 100%;
@@ -242,3 +266,73 @@ header {
     transform: scale(1);
     opacity: 1;
 }
+
+/* ------------------------ */
+/* HOW IT WORKS */
+/* ------------------------ */
+
+.section-steps {
+    background-color: #f4f4f4;
+}
+
+.steps-box {
+    margin-top: 30px;
+}
+
+.steps-box:first-of-type {
+    text-align: right;
+    padding-right: 3%;
+}
+
+.steps-box:last-of-type {
+    padding-left: 3%;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.work-step {
+    margin-bottom: 50px;
+}
+
+.work-step div {
+    color: #e67e22;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #e67e22;
+    border-radius: 50%;
+    text-align: center;
+    padding: 15px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+
+.work-step:first-of-type {
+    margin-top: 50px;
+}
+
+.work-step:last-of-type {
+    margin-bottom: 70px;
+}
+
+.button-app img {
+    height: 50px;   
+    width: auto;
+}
+
+/* ------------------------ */
+/* CITIES */
+/* ------------------------ */
+.box img {
+    width: 100%;
+    margin-bottom: 15px;    
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
+
+
