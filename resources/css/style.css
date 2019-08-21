@@ -15,7 +15,7 @@ html {
     color: #555;
     font-family: 'Lato', 'Arial', san-serif;
     font-size: 20px;
-    font-weight: 300px;   
+    font-weight: 300;   
 }
 
 .clearfix {zoom:1}
@@ -135,7 +135,8 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/hero.jpg);
     height: 100vh;
     background-position: center;
-    background-size: cover;   
+    background-size: cover; 
+    background-attachment: fixed;
     
 }
 
@@ -148,9 +149,27 @@ header {
     transform: translate(-50%,-50%);    
 }
 
+/* LINKS */
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 1px;
+    transition: color 0.2s, border-bottom 0.2s; 
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+    
+}
+
+
 /* ------------------------ */
 /* BUTTONS */
-/* ------------------------ */
+/* ------------------------ */  
 
 .btn:link,
 .btn:visited {
@@ -317,6 +336,11 @@ header {
     margin-bottom: 70px;
 }
 
+.button-app:link,
+.button-app:visited {
+    border-bottom: 0;
+}
+
 .button-app img {
     height: 50px;   
     width: auto;
@@ -334,5 +358,46 @@ header {
     margin-bottom: 5px;
 }
 
+/* ------------------------ */
+/* TESTIMONIAL */
+/* ------------------------ */
+
+.section-testimonial {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(img/back-customers.jpg);
+    background-size: cover; 
+    color: #fff;
+    background-attachment: fixed;
+}
+
+blockquote {
+    line-height: 145%;
+    font-style: italic;
+    padding: 2%;
+    font-weight: 300;
+    margin-top: 30px;
+    position: relative;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    display: block;
+}
+
+cite {
+    display: block;
+    margin-top: 10px;
+    
+}
+
+cite img {
+    border-radius: 50%;
+    height: 45px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
 
 
