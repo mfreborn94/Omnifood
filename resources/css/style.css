@@ -172,7 +172,8 @@ a:active {
 /* ------------------------ */  
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;    
     border-radius: 20px;
@@ -180,10 +181,9 @@ a:active {
     transition: background-color 0.2s, color 0.2s, border 0.2s;
 }
 
-/* Orange color: #e67e22 */
-
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     background-color: #e67e22;
     border: solid 1px #e67e22;
     color: #fff;
@@ -196,7 +196,9 @@ a:active {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #cf6d17;
 }
 
@@ -221,7 +223,7 @@ a:active {
 .main-nav {
     float: right;
     list-style: none;
-    margin: 55px 0;
+    margin: 55px 0px 55px 50px;
 }   
 
 .main-nav li {
@@ -400,4 +402,167 @@ cite img {
     margin-right: 10px;
 }
 
+/* ------------------------ */
+/* SIGN UP */
+/* ------------------------ */
 
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background-color: #fff;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.price-plan {
+    font-size: 300%;
+    font-weight: 200;
+    color: #e67e22;
+    margin-bottom: 10px;
+
+}
+
+.price-plan span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.price-plan-month {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+
+}
+
+/* ------------------------ */
+/* SIGN UP */
+/* ------------------------ */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+input[type=checkbox] {
+    margin: 15px 5px 15px 0;
+}
+
+textarea {
+    height: 100px;
+}
+
+*:focus {outline:none}
+
+/* ------------------------ */
+/* FOOTER*/
+/* ------------------------ */
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited  {
+    color: #888;
+    border: 0;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #fff;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    font-size: 80%;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 170%;
+}
+
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-googleplus,
+.ion-logo-instagram {
+    transition: color 0.2s;
+}
+
+.ion-logo-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-logo-twitter:hover {
+    color: #55acee;
+}
+
+.ion-logo-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-logo-instagram:hover {
+    color: #e95950;
+}

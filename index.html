@@ -246,15 +246,15 @@
                     <div class="plan-box">
                         <div>
                             <h3> PREMIUM </h3>
-                            <p class="price-plan">399$ / month</p>
+                            <p class="price-plan">399$ <span>/ month</span></p>
                             <p class="price-plan-month">That’s only 13.30$ per meal</p>
                         </div>
                         <div>
                             <ul>
-                                <li><i class="ion-md-checkmark"></i>1 meal every day</li>
-                                <li><i class="ion-md-checkmark"></i>Order 24/7y</li>
-                                <li><i class="ion-md-checkmark"></i>Access to newest creations</li>
-                                <li><i class="ion-md-checkmark"></i>Free delivery</li>
+                                <li><i class="ion-md-checkmark icon-small"></i>1 meal every day</li>
+                                <li><i class="ion-md-checkmark icon-small"></i>Order 24/7y</li>
+                                <li><i class="ion-md-checkmark icon-small"></i>Access to newest creations</li>
+                                <li><i class="ion-md-checkmark icon-small"></i>Free delivery</li>
                             </ul>                      
                         </div>
                         <div>
@@ -266,15 +266,15 @@
                     <div class="plan-box">
                         <div>
                             <h3> PREMIUM </h3>
-                            <p class="price-plan">149$ / month</p>
+                            <p class="price-plan">149$ <span>/ month</span></p>
                             <p class="price-plan-month">That’s only 14.90$ per meal</p>
                         </div>
                         <div>
                             <ul>
-                                <li><i class="ion-md-checkmark"></i>1 meal 10 days/month</li>
-                                <li><i class="ion-md-checkmark"></i>Order 24/7y</li>
-                                <li><i class="ion-md-checkmark"></i>Access to newest creations</li>
-                                <li><i class="ion-md-checkmark"></i>Free delivery</li>
+                                <li><i class="ion-md-checkmark icon-small"></i>1 meal 10 days/month</li>
+                                <li><i class="ion-md-checkmark icon-small"></i>Order 24/7y</li>
+                                <li><i class="ion-md-checkmark icon-small"></i>Access to newest creations</li>
+                                <li><i class="ion-md-checkmark icon-small"></i>Free delivery</li>
                             </ul>                      
                         </div>
                         <div>
@@ -286,15 +286,15 @@
                     <div class="plan-box">
                         <div>
                             <h3> PREMIUM </h3>
-                            <p class="price-plan">19$ per meal</p>
-                            <p class="price-plan-month"></p>
+                            <p class="price-plan">19$ <span>per meal</span></p>
+                            <p class="price-plan-month">&nbsp;</p>
                         </div>
                         <div>
                             <ul>
-                                <li><i class="ion-md-checkmark"></i>1 meal</li>
-                                <li><i class="ion-md-checkmark"></i>Order from 8 am to 12 pm</li>
-                                <li><i class="ion-md-close"></i></li>
-                                <li><i class="ion-md-checkmark"></i>Free delivery</li>
+                                <li><i class="ion-md-checkmark icon-small"></i>1 meal</li>
+                                <li><i class="ion-md-checkmark icon-small"></i>Order from 8 am to 12 pm</li>
+                                <li><i class="ion-md-close icon-small"></i></li>
+                                <li><i class="ion-md-checkmark icon-small"></i>Free delivery</li>
                             </ul>                      
                         </div>
                         <div>
@@ -304,38 +304,108 @@
                 </div>                
             </div>            
         </section>
+
+        <section class="section-form">
+            <div class="row">
+                <h2>We're happy to hear from you</h2>
+            </div>
+            <div class="row">
+                <form method="POST" class="contact-form" action="#">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name"> Name </label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email"> Email </label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us"> How did you find us? </label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
+                                <option value="friends" selected>Friends</option>
+                                <option value="search">Search Engine</option>
+                                <option value="ad">Advertisement</option>
+                                <option value="other">Other</option> 
+                            </select>
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col span-1-of-3">
+                            <label> Newsletter? </label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" id="new" name="new" checked> Yes, please.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label> Drop us a line </label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea id="message" name="message" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label> &nbsp; </label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-logo-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-logo-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-logo-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-logo-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p> Copyright &copy; by Omnifood 2015, All rights reserved</p>
+            </div>
+        </footer>
     </body>
 </html>
 
 <!--
-Section 6: Sign up and pricing plans
-Title: Start eating healthy today
+Section 8: Footer
+Title: None
 
-Plan 1: Premium
-399$ per month
-That’s only 13.30$ per meal
-1 meal every day
-Order 24/7
-Access to newest creations
-Free delivery
+Navigation:
+1. About us
+2. Blog
+3. Press
+4. iOS App
+5. Android App
 
-
-Plan 2: Pro
-149$ per month
-That’s only 14.90$ per meal
-1 meal 10 days/month
-Order 24/7
-Access to newest creations
-Free delivery
-
-
-Plan 3: Starter
-19$ per meal
-1 meal
-Order from 8 am to 12 pm
-Free delivery
-
-
-
+Also include links to facebook, twitter, google+ and Instagram accounts.
 
 -->
